@@ -5,6 +5,8 @@ const headless = true;
 const pages = [
    { name: 'TechBhubaneswar Homepage', url: 'http://www.techbhubaneswar.com/'},
    { name: 'TechBhubaneswar  Event Schedule', url: 'http://www.techbhubaneswar.com/event-schedule/'},
+   { name: 'TechBhubaneswar Homepage', url: 'http://www.techbhubaneswar.com/'},
+      { name: 'TechBhubaneswar  Event Schedule', url: 'http://www.techbhubaneswar.com/event-schedule/'},
    { name: 'TechBhubaneswar Speakers', url: 'http://www.techbhubaneswar.com/#_key-speakers'},
    { name: 'TechBhubaneswar Registration', url: 'http://www.techbhubaneswar.com/free-registration/'},
    { name: 'TechBhubaneswar Speaker registration', url: 'http://www.techbhubaneswar.com/be-a-speaker/'},
