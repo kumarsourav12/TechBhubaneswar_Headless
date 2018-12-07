@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer')
-const parallel = 13;
+const parallel = 3;
 const headless = false;
 
 
@@ -16,7 +16,7 @@ const pages = [
    { name: 'TechBhubaneswar 2017 speakers', url: 'http://www.techbhubaneswar.com/speakers-2017/'},
    { name: 'Mindfire Homepage', url: 'http://www.mindfiresolutions.com/'},
    { name: 'Mindfire About Us', url: 'http://www.mindfiresolutions.com/aboutus.htm'},
-   { name: 'Mindfire Services', url: 'http://www.mindfiresolutions.com/services.htm'},
+   { name: 'Mindfire Services', url: 'http://www.mindfiresolutions.com/services.htm'}
 ]
 
 const screenshotPages = async (pages, parallel) => {
@@ -60,6 +60,7 @@ var start = new Date().getTime();
                                            })
             await page.screenshot({ path: '../screenshots/'+"headless-"+headless+elem + ' ' + pages[elem].name +'.png' }).then(console.log('🤞 I have kept my promise to screenshot ' + pages[elem].name))
           } catch (err) {
+
             console.log('Sorry! I couldn\'t keep my promise to screenshot ' + pages[elem].name)
           }
         }))
